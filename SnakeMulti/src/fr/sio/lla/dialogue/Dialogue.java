@@ -15,7 +15,7 @@ public class Dialogue{
 	 * @param mess : le message a afficher
 	 */
 	public static void message(Component parentComponent, String mess){
-		
+		//KEEPO
 		JOptionPane.showMessageDialog(parentComponent, mess, "Message", JOptionPane.PLAIN_MESSAGE);
 	}
 	
