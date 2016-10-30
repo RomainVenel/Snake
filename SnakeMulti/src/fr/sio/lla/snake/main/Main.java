@@ -18,8 +18,6 @@ import javax.swing.KeyStroke;
 
 import fr.sio.lla.dialogue.Dialogue;
 import fr.sio.lla.snake.snake.*;
-import fr.sio.lla.sound.Sound;
-
 
 /**
  * Class Main du Snake
@@ -50,10 +48,6 @@ public class Main extends JFrame{
 	 * Constructeur pour construire la fenetre du jeu
 	 */
 	public Main(){
-		
-		//Musique de fond
-		Sound fond = new Sound("C:\\Users\\VENEL\\workspace\\SnakeMulti\\src\\fr\\sio\\lla\\sound\\Requiem_for_a_dream_Soundtrack.wav");
-	    InputStream streamFond = new ByteArrayInputStream(fond.getSamples());
 		
 		this.setTitle("Snake !");
 		this.setLayout(new BorderLayout());
@@ -147,8 +141,6 @@ public class Main extends JFrame{
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		this.setVisible(true);
 		
-		//ON INCRUSTE LE SON PUTAIN !
-		fond.play(streamFond);
 	}
 	
 	/**

@@ -11,7 +11,6 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 
 import fr.sio.lla.snake.carte.Food2;
-import fr.sio.lla.sound.Sound;
 
 
 /**
@@ -45,9 +44,6 @@ public class Snake2 extends JPanel implements Runnable, KeyListener{
 	private int score = 0;
 	private JPanel pc = new JPanel();
 	
-	//Bruitage de miam-miam
-    Sound miam = new Sound("C:\\Users\\VENEL\\workspace\\SnakeMulti\\src\\fr\\sio\\lla\\sound\\13173.wav");
-    InputStream streamMiam = new ByteArrayInputStream(miam.getSamples());
 	
 	/**
 	 * Créé un nouveau serpent
